@@ -2,7 +2,7 @@
  * @Autor: junhui li
  * @Date: 2021-08-10 17:55:02
  * @LastEditors: junhui li
- * @LastEditTime: 2021-08-11 10:50:14
+ * @LastEditTime: 2021-08-11 11:16:39
  * @Description: 
  */
 /**
@@ -10,6 +10,7 @@
  * @param {number} target
  * @return {number}
  */
+// 核心思想依然是双指针
  var threeSumClosest = function(nums, target) {
   let sortNums = nums.sort((a, b) => a - b)
   let cha = sortNums[0] + sortNums[1] + sortNums[2]
