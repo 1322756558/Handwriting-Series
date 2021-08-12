@@ -2,7 +2,7 @@
  * @Autor: junhui li
  * @Date: 2021-08-12 14:53:19
  * @LastEditors: junhui li
- * @LastEditTime: 2021-08-12 16:32:00
+ * @LastEditTime: 2021-08-12 16:42:08
  * @Description: 
  */
 // 给你一个字符串 s ，找出其中最长的回文子序列，并返回该序列的长度。
@@ -28,6 +28,7 @@
 // 1 <= s.length <= 1000
 // s 仅由小写英文字母组成
 
+// 思路：回文的本质是一个回文两边加两个一样的字符， 解法是对比两个子字符串，如果两个字符相同则记录当前指针位置最大回文为最大子回文+2，最后统计dp[0][length-1]得到最大子字符
 /**
  * @param {string} s
  * @return {number}
