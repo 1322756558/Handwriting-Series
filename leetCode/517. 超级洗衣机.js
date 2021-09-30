@@ -52,9 +52,8 @@
   let lastNum = 0
   machines.forEach(ele => {
     let deviation = ele - average
-    if(Math.abs(deviation) > maxCount) maxCount = Math.abs(deviation)
+    if(deviation > maxCount) maxCount = deviation
     lastNum += deviation
-    console.log(lastNum)
     maxCount = Math.abs(lastNum) > maxCount ? Math.abs(lastNum) : maxCount
   })
 
