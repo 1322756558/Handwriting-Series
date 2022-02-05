@@ -48,16 +48,6 @@ var getMaximumGold = function (grid) {
       maxValue = grid[i][j]
         ? Math.max(maxValue, getPointValue(grid, i, j))
         : maxValue;
-      // console.log(i,j)
-      // console.log(grid[i])
-      // if(grid[i][j]){
-      //   // console.log(grid[i][j])
-      //   // console.log(getPointValue(grid, i, j))
-      //   if(getPointValue(grid, i, j) > maxValue){
-      //     // console.log(i, j, getPointValue(grid, i, j))
-      //     maxValue = getPointValue(grid, i, j)
-      //   }
-      // }
     }
   }
   return maxValue;
